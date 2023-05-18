@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jack McGinley Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://kit.fontawesome.com/aef71fef7c.js" crossorigin="anonymous"></script>
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Raleway", sans-serif
+        }
+
+        body,
+        html {
+            height: 100%;
+            line-height: 1.8;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        /* Full height image header */
+        .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url(./images/francesco-ungaro-jqKS0ET-wGE-unsplash.jpg );
+            min-height: 100%;
+        }
+
+        .w3-bar .w3-button {
+            padding: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide">HOME</a>
+           
+           
+            <div class="w3-dropdown-hover ">
+                <button class="w3-button" title="Projects"><i class="fa fa-th"></i> PROJECTS <i
+                        class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                    <a href="#lyrefestival" class="w3-bar-item w3-button">Music Festival</a>
+                    <a href="#ai" class="w3-bar-item w3-button">AI project</a>
+                    <a href="#tree" class="w3-bar-item w3-button">Structured Tree</a>
+                    <a href="#admin" class="w3-bar-item w3-button">REST API</a>
+                    <a href="#sql" class="w3-bar-item w3-button">MySQL Database App</a>
+                </div>
+            </div>
+            <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> STRENGTHS</a>
+             <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            ×</a>
+        
+       
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+       
+
+        <!-- Header with Slideshow -->
+        <div class="w3-container ">
+
+            <div class="mySlides w3-animate-opacity">
+                <div class="w3-display-middle w3-text-blue w3-margin-top" style="padding: 24px;">
+                    <span class="w3-xxxlarge w3-hide-small">Hi my name is Jack McGinley</span><br>
+                    <span class="w3-xlarge w3-hide-large w3-hide-medium">Hi my name is Jack McGinley</span><br>
+                    <span class="w3-large w3-center">Aspiring software developer</span>
+                </div>
+
+                <div class="w3-display-bottommiddle w3-padding w3-hide-small" style="width:45%">
+                    <div class=" w3-black  w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+                        <h1 class="w3-xlarge w3-center w3-text-light-blue">A highly experienced novice</h1>
+                        </h1>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides w3-animate-opacity">
+                <div class="w3-display-bottommiddle w3-padding " style="width:55%">
+                    <div class=" w3-blue  w3-hover-opacity-off w3-padding-large w3-round-large">
+                        <h1 class="w3-xlarge">About me</h1>
+                        <hr class="w3-opacity">
+                        <p>I have enjoyed a successful career in technology, managing development teams to create web
+                            and mobile applications for the finance, telecomms and public sectors.</p>
+                        <p class = "w3-hide-medium w3-hide-small">     
+                            I completed a 12-week full time bootcamp in software development with JustIT to immerse
+                            myself in coding projects and learn by doing. </p>
+
+                        <p>
+                            My goal is to leave behind the project management, people management, team leadership etc
+                            that has characterised my tech career to date, and pursue my passion to get ‘hands-on’ as a
+                            programmer and developer in a high performing team.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides w3-animate-opacity">
+                                <div class="w3-display-bottommiddle w3-padding " style="width:45%">
+                    <div class="w3-black  w3-text-amber 3-hover-opacity-off w3-padding-large w3-round-large">
+                        <h1 class="w3-xlarge ">Programming skills</h1>
+                        <hr class="w3-opacity w3-text-yellow">
+                       
+                        <i
+                            class="w3-xxxlarge w3-padding-large w3-padding-24 w3-margin devicon-html5-plain-wordmark"></i>
+                        <i class="w3-xxxlarge w3-padding-large w3-margin devicon-css3-plain-wordmark"></i>
+                        <i class="w3-xxxlarge w3-padding-large w3-margin devicon-javascript-plain"></i>
+                        <i class="w3-xxxlarge w3-padding-large w3-margin devicon-python-plain-wordmark"></i>
+                        <i class="w3-xxxlarge w3-padding-large w3-margin devicon-nodejs-plain-wordmark"></i>
+                        <i class="w3-xxxlarge w3-padding-large w3-margin devicon-nodejs-plain"></i>
+                        <i class="w3-xxxlarge w3-padding-large w3-margin devicon-express-original-wordmark"></i>
+                        <i class="w3-xxxlarge w3-padding-large w3-margin devicon-npm-original-wordmark"></i>
+                        <i class="w3-xxxlarge w3-padding-large w3-margin devicon-mysql-plain-wordmark"></i>
+                        <i class="w3-xxxlarge w3-padding-large w3-margin devicon-sqlite-plain-wordmark"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides w3-animate-opacity">
+              
+                <div class="w3-display-bottommiddle w3-padding " style="width:35%">
+                    <div class="w3-black  w3-text-amber  w3-hover-opacity-off w3-padding-large w3-round-large">
+                        <h1 class="w3-xlarge">Dev skills</h1>
+                        <hr class="w3-opacity">
+                        <i class="w3-xxxlarge w3-padding-large devicon-git-plain-wordmark"></i>
+                        <i class="w3-xxxlarge w3-padding-large devicon-github-original-wordmark"></i>
+                        <i class="w3-xxxlarge w3-padding-large devicon-vscode-plain-wordmark"></i>
+                        <i class="w3-xxxlarge w3-padding-large devicon-jira-plain-wordmark"></i>
+                        <i class="w3-xxxlarge w3-padding-large devicon-confluence-original-wordmark"></i>
+                       
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides w3-animate-opacity">
+                
+                <div class="w3-display-bottommiddle w3-padding" style="width:30%">
+                    <div class="w3-black  w3 opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+
+                        <h1 class="w3-xlarge w3-center w3-text-blue">This is me!</h1>
+                        <hr class="w3-opacity">
+                        <img src="images/Jack_Apr22_2.jpg"
+                            class="w3-image w3-circle w3-opacity w3-hover-opacity-off " alt="photo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides w3-animate-opacity">
+              
+                <div class="w3-display-bottommiddle w3-padding " style="width:35%">
+                    <div class="w3-black  w3-text-blue  w3-hover-opacity-off w3-padding-large w3-round-large">
+                        <h1 class="w3-xlarge">Hobbies and Interests</h1>
+                        <hr class="w3-opacity">
+                        <i class=" w3-tooltip w3-xxxlarge w3-padding-large fa-solid fa-person-skiing"><span style="position:absolute;left:0;top:-8px" class = "w3-text w3-small">Skiing</span> </i>
+                        <i class="w3-tooltip w3-xxxlarge w3-padding-large fa-solid fa-book-open-reader"><span style="position:absolute;left:0;top:-8px" class = "w3-text w3-small">Learning</span> </i>
+                        <i class="w3-tooltip w3-xxxlarge w3-padding-large fa-solid fa-children"><span style="position:absolute;left:0;top:-8px" class = "w3-text w3-small">Family</span> </i>
+                        <i class="w3-tooltip w3-xxxlarge w3-padding-large fa-solid fa-code"><span style="position:absolute;left:0;top:-8px" class = "w3-text w3-small">Coding</span> </i>
+                        
+
+
+
+                    </div>
+                </div>
+            </div>
+            <a class="w3-button w3-blue w3-display-right w3-margin-right w3-round  w3-hover-light-grey"
+                onclick="plusDivs(1)">Learn more <i class="fa fa-angle-right"></i></a>
+            <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Learn more <i
+                    class="fa fa-angle-right"></i></a>
+        </div>
+
+        <div class="w3-display-bottomright w3-hide-small">
+            <p><a href="./documents/Jack_McGinley_CV.pdf"
+                    class="w3-button w3-white w3-padding-large w3-large w3-margin-right w3-margin-bottom w3-opacity w3-hover-opacity-off w3-display-bottomright"
+                    target = "_blank"><i class="fa fa-solid fa-file"></i> View CV </a></p>
+        </div>
+        <div class="w3-display-bottomleft w3-text-blue w3-large w3-medium w3-hide-small" style="padding:24px 48px">
+            <a href="https://www.linkedin.com/in/jack-mcginley-b259b711" target="_blank"><i
+                    class="fa fa-linkedin w3-xxxe w3-xlarge w3-padding-large w3-hover-opacity"></i></a>
+            <a href="https://github.com/jackmcginley" target="_blank">
+                <i class="fa fa-github w3-xlarge w3-padding-large w3-hover-opacity"></i>
+            </a>
+        </div>
+    </header>
+
+
+    <!-- The Music  Festival Section -->
+    <div id="lyrefestival" class="w3-padding-64 w3-white">
+        <div class="w3-row-padding">
+            <div class="w3-col l8 m6">
+                <h1 class="w3-jumbo"><b>Lyre Festival</b></h1>
+                <h1 class="w3-xxxlarge w3-text-green"><b>Craggy Island, Ireland</b></h1>
+                <p><span class="w3-xlarge">First bootcamp project.</span> This website was developed in the first week
+                    of the bootcamp as an exercise to learn HTML and CSS. You can tell it's an assigned project because
+                    half of the headline acts are dead!</p>
+                <p><span class="w3-xlarge">Technologies used:</span> HTML5, CSS3</p>
+                <p><span class="w3-xlarge">Notable features:</span> Responsive design - Embedded Google maps - Embedded
+                    video - Contact form - Grid and flex layouts - Mutiple pages with sidebar navigation</p>
+                <p><span class="w3-xlarge">Biggest challenges:</span> Everything! This was the very first website I ever
+                    created, so there was a lot of trial and error, a lot of "What the ???" and a lot of satisfaction
+                    when it all eventually came together.</p>
+                <p>The site can be viewed <a href="https://jackmcginley.github.io/Lyre-Festival/"
+                        class="w3-hover-text-green" target="_blank">here</a> and the code on Github can be seen <a
+                        href="https://github.com/jackmcginley/Lyre-Festival" class="w3-hover-text-green"
+                        target="_blank">here.</a> </p>
+            </div>
+            <div class="w3-col l4 m6">
+                <a href="https://jackmcginley.github.io/Lyre-Festival/" target="_blank">
+                    <img src="/images/festival2-unsplash.jpg" class="w3-image w3-right w3-round-large w3-hide-small"
+                        width="335" height="471" title="click to view project">
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Project Section -->
+    <div id="ai" class="w3-padding-64 w3-light-grey">
+        <div class="w3-row-padding">
+            <div class="w3-col l4 m6">
+                <a href="https://ai-techtest.netlify.app/" target="_blank">
+                    <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="/images/AI-unsplash.jpg"
+                        alt="App" width="335" height="471" title="click to view project">
+                </a>
+            </div>
+            <div class="w3-col l8 m6">
+                <h1 class="w3-jumbo"><b>AI Application</b></h1>
+                <h1 class="w3-xxxlarge w3-text-red"><b>Take the GPT challenge!</b></h1>
+                <p><span class="w3-xlarge">Description.</span> This is a web application for testing your knowledge of a
+                    chosen coding language or technology. The app connects to the Openai (GPT) API which provides random
+                    questions for the user, and scores the answers. The application tallies the score and displays the
+                    scores for all the different technology tests on a coloured dashboard. </p>
+                <p><span class="w3-xlarge">Technologies used:</span> HTML5, CSS3, Javascript, NodeJS, NPM, Parcel,
+                    OpenAI</p>
+                <p><span class="w3-xlarge">Notable features:</span> Javascript ES6 modules - Use of OpenAI API - Wide 
+                    variety of skills can be tested in one place - Chat style interface - Deployed in production</p>
+                <p><span class="w3-xlarge">Biggest challenges:</span> Learning NodeJS and npm and how to manage the
+                    imports and exports among modules without error. Also the proper use of asynchronous javascript for
+                    communicating with the API.</p>
+                <p>The site can be viewed <a href="https://ai-techtest.netlify.app/" class="w3-hover-text-red"
+                        target="_blank">here</a> and the code on Github is <a
+                        href="https://github.com/jackmcginley/AI-Enabled-Coding-Test" class="w3-hover-text-red"
+                        target="_blank">here.</a> </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Structured Tree Section -->
+    <div id="tree" class="w3-padding-64 w3-white">
+        <div class="w3-row-padding">
+            <div class="w3-col l8 m6">
+                <h1 class="w3-jumbo"><b>Structured Tree</b></h1>
+                <h1 class="w3-xxxlarge w3-text-green"><b>General purpose JS component</b></h1>
+                <p><span class="w3-xlarge">Description:</span> This creates a structured tree with all of the node and
+                    parent-child branch relationships. This type of component can be widely used for a data structure
+                    with multiple branches. The component also provides dynamic rendering of the tree as nodes are added
+                    and removed.</p>
+                <p><span class="w3-xlarge">Technologies used:</span> HTML5, CSS3, Javascript</p>
+                <p><span class="w3-xlarge">Notable features:</span> Object-oriented Javascript - User interface to build
+                    and render a tree structure on-the-fly</p>
+                <p><span class="w3-xlarge">Biggest challenges:</span> Firstly the tree algorithm had to be designed,
+                    which proved to be quite complex. I was also keen to implement this using an OO approach so learning
+                    how to do that was also something new. Lastly, the biggest challenge is probably the algorithm to
+                    render the tree in the correct hierarchy. The layout required an adaptive algorithm that takes
+                    account of both the depth of the tree and its width.</p>
+                <p>The site can be viewed <a href="https://jackmcginley.github.io/Structured-Tree/"
+                        class="w3-hover-text-green" target="_blank">here</a> and the code on Github is <a
+                        href="https://github.com/jackmcginley/Structured-Tree" class="w3-hover-text-green"
+                        target="_blank">here.</a> </p>
+            </div>
+            <div class="w3-col l4 m6">
+                <a href="https://jackmcginley.github.io/Structured-Tree/" target="_blank">
+                    <img src="/images/matthew-smith-rFBA42UFpLs-unsplash.jpg"
+                        class="w3-image w3-right w3-hide-small w3-round-large" width="335" height="471"
+                        title="click to view project">
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- The Admin Console Section -->
+    <div id="admin" class="w3-padding-64 w3-light-grey">
+        <div class="w3-row-padding">
+            <div class="w3-col l4 m6">
+                <a href="https://jackmcginley.github.io/Admin-client-project/" target="_blank">
+                    <img src="/images/alireza-khatami-UrMB3mhwSqY-unsplash.jpg"
+                        class="w3-image w3-round-large w3-hide-small " width="335" height="471"
+                        title="click to view project">
+                </a>
+
+            </div>
+            <div class="w3-col l8 m6">
+                <h1 class="w3-jumbo"><b>Admin console</b></h1>
+                <h1 class="w3-xxxlarge w3-text-red"><b>Full stack application</b></h1>
+                <p><span class="w3-xlarge">Description:</span> This app allows an admin user to edit and save changes to
+                    a JSON file, which would be used in a different (user) application to gather user info. It connects
+                    to an Express server at the back end.</p>
+                <p><span class="w3-xlarge">Technologies used:</span> HTML5, Javascript, Node, Express, Postman</p>
+                <p><span class="w3-xlarge">Notable features:</span> REST API - Full stack project - Server deployed in
+                    production</p>
+                <p><span class="w3-xlarge">Biggest challenges:</span> Learning all about Node and Express, and how to
+                    deploy in production. Learned to use Postman for developing and testing the API. The error handling
+                    needs a lot more work to make this production grade, but it works well enough for a demo project.
+                </p>
+                <p>The site can be viewed <a href="https://jackmcginley.github.io/Admin-client-project/"
+                        class="w3-hover-text-green" target="_blank">here</a> and the code on Github is <a
+                        href="https://github.com/jackmcginley/Admin-client-project" class="w3-hover-text-green"
+                        target="_blank">here.</a> </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Python DB Section -->
+    <div id="sql" class="w3-padding-64 w3-white ">
+        <div class="w3-row-padding">
+
+            <div class="w3-col l8 m6">
+                <h1 class="w3-jumbo"><b>FilmFlix Database</b></h1>
+                <h1 class="w3-xxxlarge w3-text-green"><b>A database using CRUD</b></h1>
+                <p><span class="w3-xlarge">Description.</span> This is a Python application with a menu-driven front end
+                    to perform CRUD operations and create reports on a database of films. </p>
+                <p><span class="w3-xlarge">Technologies used:</span> Python, MySQL</p>
+                <p><span class="w3-xlarge">Notable features:</span> All the database functionality to create, read,
+                    update and delete - Report generation </p>
+                <p><span class="w3-xlarge">Biggest challenges:</span> This project actually proved to be fairly
+                    straightforward. Python is such a versatile language it took less than a day to complete once the
+                    database was populated. It would have been nice to put a front end on the app with Flask or Django
+                    but time didn't permit.</p>
+                <p>The app can be viewed <a href="https://jackmcginley.github.io/Filmflix-Viewer/"
+                        class="w3-hover-text-green" target="_blank">here</a> and run on Github <a
+                        href="https://github.com/jackmcginley/Python-DB-project" class="w3-hover-text-red"
+                        target="_blank">here.</a> </p>
+            </div>
+            <div class="w3-col l4 m6">
+                <a href="https://jackmcginley.github.io/Filmflix-Viewer/" target="_blank">
+                    <img class="w3-image w3-right w3-round-large w3-hide-small w3-grayscale"
+                        src="/images/databasemenu.PNG" alt="App" width="335" height="471" title="click to view project">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- About Section -->
+    <div class="w3-container w3-black" style="padding:128px 16px" id="about">
+        <h3 class="w3-center">WHAT DO I BRING?</h3>
+        
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="w3-quarter  w3-hover-light-gray">
+                <i class="fa-solid fa-book-open-reader w3-margin-bottom w3-jumbo w3-center"></i>
+                <p class="w3-large">Experience</p>
+                <p>I am new to coding, but have many years experience in software development. I know all the Agile
+                    frameworks (Scrum, Kanban etc) and have worked as a business analyst gathering requirements and
+                    writing user stories.</p>
+            </div>
+            <div class="w3-quarter  w3-hover-light-gray">
+                <i class="fa fa-heart w3-margin-bottom w3-jumbo "></i>
+                <p class="w3-large">Passion</p>
+                <p>I love problem solving, and that's why I'm getting into coding. I love the challenge of taking on
+                    something new and seeing it to completion. </p>
+            </div>
+            <div class="w3-quarter  w3-hover-light-gray">
+                <i class="fa-sharp fa-solid fa-chart-simple w3-margin-bottom w3-jumbo "></i>
+                <p class="w3-large">Analytic</p>
+                <p>I'm a hopeless analytic, never happier than when rooting around in algorithms, logic flow and data
+                    analysis.</p>
+            </div>
+            <div class="w3-quarter  w3-hover-light-gray">
+                <i class="fa-solid fa-people-group w3-margin-bottom w3-jumbo "></i>
+                <p class="w3-large">Sense of humour</p>
+                <p>I work to enjoy myself, and to help create a happy, harmonious environment where colleagues can do
+                    fantastic work and have fun along the way.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Contact Section -->
+    <div class="w3-display-container w3-light-grey" style="padding:128px 16px" id="contact">
+        <h3 class="w3-center">CONTACT</h3>
+        <p class="w3-center w3-large">Lets get in touch. Send me a message:</p>
+        <div style="margin-top:48px">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> London, UK</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 07785 536570</p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: jack.mcginley@hotmail.co.uk</p>
+            <br>
+            <form action="mailto:jack.mcginley@hotmail.co.uk" method="post">
+                <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                    <button class="w3-button w3-black" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </p>
+            </form>
+            <a href="./documents/Jack_McGinley_CV.pdf"
+            class="w3-button w3-display-bottommiddle w3-black w3-padding-large w3-large w3-margin-right w3-margin-bottom w3-opacity w3-hover-opacity-off "
+            download=""><i class="fa fa-download"></i> Download CV</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        
+        <div class="w3-xlarge w3-section">
+
+            <a href="https://www.linkedin.com/in/jack-mcginley-b259b711" target="_blank"><i
+                    class="fa fa-linkedin w3-xxxe w3-xlarge w3-padding-large w3-hover-opacity"></i></a>
+            <a href="https://github.com/jackmcginley" target="_blank">
+                <i class="fa fa-github w3-xlarge w3-padding-large w3-hover-opacity"></i>
+            </a>
+        </div>
+        <p>Copyright Jack McGinley 2023</p>
+        <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
+    </footer>
+
+    <script>
+       
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+
+        // Slideshow
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+
+</body>
+
+</html>
